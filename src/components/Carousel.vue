@@ -4,7 +4,12 @@
     <!-- BS Carousel -->
     <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" v-for="(image, i) in images" :key="i">
+        <div
+          class="carousel-item"
+          :class="{ active: i === 0 }"
+          v-for="(image, i) in images"
+          :key="i"
+        >
           <img
             class="d-block w-100"
             :src="require(`@/assets/pictures/castrocaro/${image}`)"
@@ -38,11 +43,6 @@
 export default {
   name: "Carousel",
   props: ["images"],
-  // data() {
-  //   return {
-  //     images: ["castrocaro1.jpg", "castrocaro2.jpg", "castrocaro3.jpg"],
-  //   };
-  // },
 };
 </script>
 

@@ -13,7 +13,12 @@ export default {
   },
   data() {
     return {
-      images: ["castrocaro1.jpg", "castrocaro2.jpg", "castrocaro3.jpg"],
+      images: [
+        "castrocaro1.jpg",
+        "castrocaro2.jpg",
+        "castrocaro3.jpg",
+        "castrocaro4.jpg",
+      ],
       title: "Forlì Centro - Castrocaro",
       text: `Questo, è certamente il percorso più conosciuto tra tutti quelli che iniziano a Forlì.
 			Partendo da Piazza Saffi, si scende Corso Diaz e, tenendo la destra, si arriva ai musei di San Domenico, dove, su via Andrelini dalla parte opposta da dove si è entrati, si imbocca l’ingresso del Parco Urbano.
