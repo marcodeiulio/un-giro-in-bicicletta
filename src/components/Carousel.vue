@@ -37,11 +37,12 @@
 <script>
 export default {
   name: "Carousel",
-  data() {
-    return {
-      images: ["castrocaro1.jpg", "castrocaro2.jpg", "castrocaro3.jpg"],
-    };
-  },
+  props: ["images"],
+  // data() {
+  //   return {
+  //     images: ["castrocaro1.jpg", "castrocaro2.jpg", "castrocaro3.jpg"],
+  //   };
+  // },
 };
 </script>
 
