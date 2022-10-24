@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="container">
     <router-link to="/">Home</router-link> |
     <router-link to="/castrocaro">Castrocaro</router-link> |
     <router-link to="/bertinoro">Bertinoro</router-link> |

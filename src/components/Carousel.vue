@@ -47,7 +47,16 @@ export default {
 </script>
 
 <style>
-/* #carousel {
-  width: 40vw;
-} */
+#carouselControls .carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 75vh;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #42b983;
+  border-radius: 5px;
+}
 </style>
