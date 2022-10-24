@@ -4,13 +4,22 @@
       <div class="row g-5 mb-5">
         <h3>{{ title }}</h3>
         <div class="col">
+          <h3 class="mb-lg-5 mb-sm-3">Presentazione</h3>
           <p>{{ text }}</p>
+          <table class="table" :class="{ 'w-50 m-auto': !images }">
+            <tbody>
+              <tr v-for="titem in table" :key="titem.id">
+                <th class="text-start" scope="row">{{ titem.id }}</th>
+                <td scope="row">{{ titem.value }}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div v-if="images" class="col-sm-12 col-lg-6">
           <Carousel :images="images" />
         </div>
         <div class="col-12">
-          <h3>La mappa</h3>
+          <h3 class="mb-lg-5 mb-sm-3">La mappa</h3>
           <div class="map-container">
             <iframe
               id="test-map"
@@ -31,7 +40,7 @@ export default {
   components: {
     Carousel,
   },
-  props: ["images", "text", "title"],
+  props: ["images", "text", "title", "table"],
 };
 </script>
 

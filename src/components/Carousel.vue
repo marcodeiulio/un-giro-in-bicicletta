@@ -1,6 +1,6 @@
 <template>
   <div id="carousel" class="container w-sm-100 w-lg-50">
-    <h3>Le foto</h3>
+    <h3 class="mb-lg-5 mb-md-3">Le foto</h3>
     <!-- BS Carousel -->
     <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Route :images="images" :text="text" :title="title" />
+    <Route :images="images" :text="text" :title="title" :table="table" />
   </div>
 </template>
   
@@ -33,6 +33,14 @@ export default {
             Munirsi di una borraccia d’acqua (in quanto non presenti punti di ristoro).   
             Munirsi di Cappellino, la zona non è protetta da alberi.
             Sconsigliato fare il percorso nelle ore più calde.`,
+      table: [
+        { id: "KM", value: "11.4" },
+        { id: "Dislivello", value: "Facile" },
+        { id: "Tempo", value: "1.20h" },
+        { id: "Suolo", value: "Asfalto, sterrato, ghiaioso" },
+        { id: "Ristorazione", value: "No" },
+        { id: "Bambini", value: "12<" },
+      ],
     };
   },
 };

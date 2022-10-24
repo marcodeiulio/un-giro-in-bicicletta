@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Route :images="images" :text="text" :title="title" />
+    <Route :images="images" :text="text" :title="title" :table="table" />
   </div>
 </template>
   
@@ -32,6 +32,14 @@ export default {
 			Si prosegue fino alla sinistra della chiesa di Villa Rovere dove inizia il percorso ghiaiato che giunge fino ad una piccola diga.
 			Lasciando la diga si continua dritto mantenendo la sinistra seguendo il tracciato.
 			Si giunge direttamente a Terra del Sole dove si intravede la rocca.`,
+      table: [
+        { id: "KM", value: "11" },
+        { id: "Dislivello", value: "Facile" },
+        { id: "Tempo", value: "1.50h" },
+        { id: "Suolo", value: "Misto, asfalto, sterrato, ghiaioso" },
+        { id: "Ristorazione", value: "Si: Parco Urbano o Terra del Sole" },
+        { id: "Bambini", value: "14<" },
+      ],
     };
   },
 };

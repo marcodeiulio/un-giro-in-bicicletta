@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Route :text="text" :title="title" />
+    <Route :text="text" :title="title" :table="table" />
   </div>
 </template>
   
@@ -22,6 +22,14 @@ export default {
             Il tragitto percorre il fiume Ronco sul lato destro ed è in mezzo ai laghetti del circondario di Forlì.
             Arrivati all’ex cava di Selbagnone si mantiene la strada principale sterrata che arriva direttamente alla rotonda di Selbagnone dove si prosegue dritto direzione Bertinoro.
             Il percorso inizia il suo pezzo più difficile in quanto inizia la salita verso Bertinoro in via Maestrina, che, con i suoi 4km e 200 di dislivello arriva nel centro di Bertinoro.`,
+      table: [
+        { id: "KM", value: "16" },
+        { id: "Dislivello", value: "Intermedio" },
+        { id: "Tempo", value: "2h" },
+        { id: "Suolo", value: "Asfalto, sterrato" },
+        { id: "Ristorazione", value: "Ristoranti" },
+        { id: "Bambini", value: "16<x" },
+      ],
     };
   },
 };
