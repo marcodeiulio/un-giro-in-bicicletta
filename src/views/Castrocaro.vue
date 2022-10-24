@@ -48,8 +48,8 @@
     </section>
   </div>
 </template>
-
-<script>
+  
+  <script>
 import Carousel from "@/components/Carousel.vue";
 
 export default {
@@ -58,8 +58,8 @@ export default {
   },
 };
 </script>
-
-<style>
+  
+  <style>
 p {
   text-align: left;
 }
