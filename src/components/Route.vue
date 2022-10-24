@@ -3,10 +3,10 @@
     <section>
       <div class="row g-5 mb-5">
         <h3>{{ title }}</h3>
-        <div class="col-sm-12 col-lg-6">
+        <div class="col">
           <p>{{ text }}</p>
         </div>
-        <div class="col-sm-12 col-lg-6">
+        <div v-if="images" class="col-sm-12 col-lg-6">
           <Carousel :images="images" />
         </div>
         <div class="col-12">
