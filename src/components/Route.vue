@@ -19,7 +19,8 @@
           <Carousel :images="images" />
         </div>
         <div class="col-12">
-          <h3 class="mb-lg-5 mb-sm-3">La mappa</h3>
+          <h3 class="">La mappa</h3>
+          <p class="lead text-center mb-lg-5 mb-sm-3">{{ route }}</p>
           <div class="map-container">
             <iframe
               id="test-map"
@@ -40,7 +41,7 @@ export default {
   components: {
     Carousel,
   },
-  props: ["images", "text", "title", "table"],
+  props: ["images", "text", "title", "table", "route"],
 };
 </script>
 

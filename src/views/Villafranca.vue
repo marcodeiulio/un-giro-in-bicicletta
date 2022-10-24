@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <Route :images="images" :text="text" :title="title" :table="table" />
+    <Route
+      :images="images"
+      :text="text"
+      :title="title"
+      :table="table"
+      :route="route"
+    />
   </div>
 </template>
   
@@ -41,6 +47,7 @@ export default {
         { id: "Ristorazione", value: "No" },
         { id: "Bambini", value: "12<" },
       ],
+      route: "Percorso Azzurro",
     };
   },
 };

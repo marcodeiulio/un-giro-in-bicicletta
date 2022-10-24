@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Route :text="text" :title="title" :table="table" />
+    <Route :text="text" :title="title" :table="table" :route="route" />
   </div>
 </template>
   
@@ -30,6 +30,7 @@ export default {
         { id: "Ristorazione", value: "Ristoranti" },
         { id: "Bambini", value: "16<x" },
       ],
+      route: "Percorso Rosso",
     };
   },
 };

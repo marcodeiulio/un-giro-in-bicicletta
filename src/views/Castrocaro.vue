@@ -1,6 +1,12 @@
 <template>
   <div class="container">
-    <Route :images="images" :text="text" :title="title" :table="table" />
+    <Route
+      :images="images"
+      :text="text"
+      :title="title"
+      :table="table"
+      :route="route"
+    />
   </div>
 </template>
   
@@ -40,6 +46,7 @@ export default {
         { id: "Ristorazione", value: "Si: Parco Urbano o Terra del Sole" },
         { id: "Bambini", value: "14<" },
       ],
+      route: "Percorso Giallo",
     };
   },
 };
