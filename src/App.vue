@@ -4,6 +4,7 @@
     <router-link to="/castrocaro">Castrocaro</router-link> |
     <router-link to="/bertinoro">Bertinoro</router-link> |
     <router-link to="/villafranca">Villafranca</router-link>
+    <hr />
   </div>
   <router-view />
 </template>
@@ -27,6 +28,12 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+
+  hr {
+    // border-color: #42b983;
+    border: 1px solid #42b983;
+    // color: #42b983 !important;
   }
 }
 
