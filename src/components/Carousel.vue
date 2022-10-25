@@ -54,6 +54,12 @@ export default {
   height: 75vh;
 }
 
+@media only screen and (min-width: 300px) {
+  #carouselControls .carousel-item img {
+    height: 60vh;
+  }
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: #42b983;
