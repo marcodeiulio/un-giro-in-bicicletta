@@ -1,5 +1,9 @@
 <template>
-  <div id="nav" class="container">
+  <div
+    id="nav"
+    class="container sticky-top bg-white bg-gradient"
+    style="--bs-bg-opacity: 0.95"
+  >
     <router-link to="/">Home</router-link> |
     <router-link to="/castrocaro">Castrocaro</router-link> |
     <router-link to="/bertinoro">Bertinoro</router-link> |
@@ -19,7 +23,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding-top: 30px;
 
   a {
     font-weight: bold;

@@ -1,10 +1,11 @@
 <template>
-  <div class="container">
+  <div class="container mb-5">
     <section>
-      <div class="row g-5 mb-5">
+      <div class="row g-3 mb-5">
         <h3>{{ title }}</h3>
+        <h4 v-if="subtitle">{{ subtitle }}</h4>
         <div class="col">
-          <h3 class="mb-lg-5 mb-sm-3">Presentazione</h3>
+          <h4 class="mb-lg-5 mb-sm-3">Presentazione</h4>
           <p>{{ text }}</p>
           <table class="table" :class="{ 'w-50 m-auto': !images }">
             <tbody>
@@ -18,12 +19,12 @@
         <div v-if="images" class="col-sm-12 col-lg-6">
           <Carousel :images="images" />
         </div>
-        <div class="col-12">
-          <h3 class="">La mappa</h3>
+        <div v-if="route" class="col-12">
+          <h4 class="">La mappa</h4>
           <p class="lead text-center mb-lg-5 mb-sm-3">{{ route }}</p>
           <div class="map-container">
             <iframe
-              id="test-map"
+              class="inner-map"
               src="https://www.google.com/maps/d/embed?mid=1Kq2YI7-ohTjUu_Vv0jNhSUhfixq1s4s&ehbc=2E312F"
               frameborder="0"
             ></iframe>
@@ -41,7 +42,7 @@ export default {
   components: {
     Carousel,
   },
-  props: ["images", "text", "title", "table", "route"],
+  props: ["images", "text", "subtitle", "table", "route"],
 };
 </script>
 
@@ -52,12 +53,12 @@ p {
 .map-container {
   width: 100%;
   height: 45vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-#test-map {
+.inner-map {
   width: 100%;
-  height: 200%;
+  height: 100%;
   border: 0;
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 </style>

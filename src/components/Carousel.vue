@@ -12,7 +12,7 @@
         >
           <img
             class="d-block w-100"
-            :src="require(`@/assets/pictures/castrocaro/${image}`)"
+            :src="require(`@/assets/pictures/photos/${image}`)"
             :alt="image"
           />
         </div>
