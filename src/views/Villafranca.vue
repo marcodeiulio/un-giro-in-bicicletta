@@ -49,7 +49,7 @@ export default {
       //   "villafranca65.jpg",
       //   "villafranca67.jpg",
       // ],
-      title: "Forlì-Villafranca",
+      title: "Forlì - Villafranca",
       text: `A due passi dal centro di Forlì, un bellissimo percorso in bicicletta immerso nei campi della periferia forlivese.
             Partenza Piazza Saffi, direzione est, si imbocca Corso Garibaldi e si raggiunge porta Schiavonia.
             Oltrepassata, si sale sul ponte del fiume montone e lo si attraversa, si imbocca poi il primo ingresso a destra che dà il via al percorso che costeggia l’argine del fiume. 

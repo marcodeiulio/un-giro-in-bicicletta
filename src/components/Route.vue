@@ -42,7 +42,7 @@ export default {
   components: {
     Carousel,
   },
-  props: ["images", "text", "subtitle", "table", "route"],
+  props: ["images", "text", "title", "subtitle", "table", "route"],
 };
 </script>
 
